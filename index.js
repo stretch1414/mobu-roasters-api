@@ -32,11 +32,13 @@ const rootValue = {
 
 // Use those to handle incoming requests:
 app.use(
+  '/graphql',
   graphqlHTTP({
     schema,
     rootValue,
+    graphiql: true,
   })
 );
 
 // Start the server:
-app.listen(8080, () => console.log('Server started on port 8080'));
+app.listen(4000, () => console.log('Server started on port 4000'));

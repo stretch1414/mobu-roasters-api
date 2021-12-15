@@ -11,6 +11,7 @@
     "type": "git",
     "url": "https://github.com/stretch1414/mobu-roasters-api"
   },
+  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
