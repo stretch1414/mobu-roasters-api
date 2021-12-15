@@ -1,5 +1,5 @@
 const schema = {
-  schema: './*.graphql',
+  schema: '**/*.graphql',
 };
 
 export default schema;
