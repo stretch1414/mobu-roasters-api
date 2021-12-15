@@ -3,13 +3,8 @@ export const config = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-  ],
-  parser: '@typescript-eslint/parser',
+  extends: ['eslint:recommended', 'prettier'],
+  parser: 'prettier-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -17,7 +12,7 @@ export const config = {
     ecmaVersion: 13,
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'prettier'],
+  plugins: ['prettier'],
   rules: {
     'prettier/prettier': ['error', { singleQuote: true, endOfLine: 'auto' }],
   },
