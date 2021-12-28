@@ -27,6 +27,7 @@ const __dirname = path.dirname(__filename);
 // console.log('mergedResolvers', { mergedResolvers });
 // console.log(JSON.stringify(mergedResolvers));
 
+// Have to use globbing instead because of https://github.com/nodejs/node/issues/31710
 const resolversArray = await Promise.all(
   glob
     .sync('./*', { ignore: ['./index.js'], cwd: __dirname })
